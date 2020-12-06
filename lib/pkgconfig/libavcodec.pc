@@ -1,0 +1,14 @@
+prefix=/home/timo/MyStuff/Programming/töö/KrattWorks/ffmpeg
+exec_prefix=${prefix}
+libdir=/home/timo/MyStuff/Programming/töö/KrattWorks/ffmpeg/lib
+includedir=/home/timo/MyStuff/Programming/töö/KrattWorks/ffmpeg/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 58.115.100
+Requires: libswresample >= 3.8.100, libavutil >= 56.62.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -pthread -lm -llzma -lz
+Libs.private: 
+Cflags: -I${includedir}

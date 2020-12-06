@@ -1,0 +1,14 @@
+prefix=/home/timo/MyStuff/Programming/töö/KrattWorks/ffmpeg
+exec_prefix=${prefix}
+libdir=/home/timo/MyStuff/Programming/töö/KrattWorks/ffmpeg/lib
+includedir=/home/timo/MyStuff/Programming/töö/KrattWorks/ffmpeg/include
+
+Name: libavdevice
+Description: FFmpeg device handling library
+Version: 58.11.103
+Requires: libavfilter >= 7.92.100, libswscale >= 5.8.100, libavformat >= 58.65.100, libavcodec >= 58.115.100, libswresample >= 3.8.100, libavutil >= 56.62.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavdevice -lm -lxcb
+Libs.private: 
+Cflags: -I${includedir}
